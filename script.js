@@ -1,0 +1,15 @@
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.querySelector(".nav");
+
+menuBtn.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+
+const navLinks = document.querySelectorAll(".nav a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+});
